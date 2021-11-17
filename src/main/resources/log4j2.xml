@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS}, message=[%m],traceId=%X{TraceId} %n</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+		<RollingFile name="File"
+			fileName="/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/src/main/resources/logs/log4j2.log"
+			filePattern="/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/src/main/resources/logs/log4j2-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.jones.shoppingmart.ProductSerice"
+			level="TRACE">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<AsyncRoot level="INFO">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</AsyncRoot>
+	</Loggers>
+
+</Configuration>

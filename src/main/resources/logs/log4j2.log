@@ -1,0 +1,95 @@
+
+			message=[msg=Product service call is success for Api/product/1, method=ProductController.getProductById, level=INFO],traceId=0283e54b-c924-4d9b-b57e-8e808705bf1a 
+2021-11-15 21:22:44.248, message=[Starting ShoppingApplication using Java 11.0.8 on Joness-MacBook-Air.local with PID 43504 (/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes started by jonesalapat in /Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging)],traceId= 
+2021-11-15 21:22:44.263, message=[No active profile set, falling back to default profiles: default],traceId= 
+2021-11-15 21:22:46.587, message=[Tomcat initialized with port(s): 8080 (http)],traceId= 
+2021-11-15 21:22:46.617, message=[Initializing ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-15 21:22:46.619, message=[Starting service [Tomcat]],traceId= 
+2021-11-15 21:22:46.620, message=[Starting Servlet engine: [Apache Tomcat/9.0.54]],traceId= 
+2021-11-15 21:22:46.729, message=[Initializing Spring embedded WebApplicationContext],traceId= 
+2021-11-15 21:22:46.729, message=[Root WebApplicationContext: initialization completed in 2361 ms],traceId= 
+2021-11-15 21:22:48.516, message=[Exposing 2 endpoint(s) beneath base path '/actuator'],traceId= 
+2021-11-15 21:22:48.616, message=[Starting ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-15 21:22:48.634, message=[Tomcat started on port(s): 8080 (http) with context path ''],traceId= 
+2021-11-15 21:22:48.657, message=[Started ShoppingApplication in 5.448 seconds (JVM running for 7.441)],traceId= 
+2021-11-15 21:26:07.705, message=[Initializing Spring DispatcherServlet 'dispatcherServlet'],traceId= 
+2021-11-15 21:26:07.705, message=[Initializing Servlet 'dispatcherServlet'],traceId= 
+2021-11-15 21:26:07.735, message=[Completed initialization in 30 ms],traceId= 
+2021-11-15 21:26:07.886, message=[msg=Product service call is success, method=ProductService.getProductById, level=INFO],traceId=9abb662e-897e-4ef2-805f-cb1d126714ee 
+2021-11-15 21:26:07.893, message=[msg=Product service call is success for Api/product/1, method=ProductController.getProductById, level=INFO],traceId=9abb662e-897e-4ef2-805f-cb1d126714ee 
+2021-11-15 21:26:29.246, message=[msg=Product service call is success, method=ProductService.getProductById, level=INFO],traceId=078d8f66-d0d7-44ae-89e2-793b55fdaa6d 
+2021-11-15 21:26:29.246, message=[msg=Product service call is success for Api/product/1, method=ProductController.getProductById, level=INFO],traceId=078d8f66-d0d7-44ae-89e2-793b55fdaa6d 
+2021-11-17 10:47:17.942, message=[Starting ShoppingApplication using Java 11.0.8 on Joness-MacBook-Air.local with PID 52485 (/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes started by jonesalapat in /Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging)],traceId= 
+2021-11-17 10:47:17.960, message=[No active profile set, falling back to default profiles: default],traceId= 
+2021-11-17 10:47:20.158, message=[Tomcat initialized with port(s): 8080 (http)],traceId= 
+2021-11-17 10:47:20.207, message=[Initializing ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-17 10:47:20.208, message=[Starting service [Tomcat]],traceId= 
+2021-11-17 10:47:20.209, message=[Starting Servlet engine: [Apache Tomcat/9.0.54]],traceId= 
+2021-11-17 10:47:20.353, message=[Initializing Spring embedded WebApplicationContext],traceId= 
+2021-11-17 10:47:20.353, message=[Root WebApplicationContext: initialization completed in 2261 ms],traceId= 
+2021-11-17 10:47:20.518, message=[Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'metricsListerner'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'metricsListener' defined in file [/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes/com/jones/shoppingmart/monitoring/MetricsListener.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.micrometer.core.instrument.MeterRegistry' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}],traceId= 
+2021-11-17 10:47:20.523, message=[Stopping service [Tomcat]],traceId= 
+2021-11-17 10:47:20.550, message=[
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.],traceId= 
+2021-11-17 10:47:20.580, message=[
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.jones.shoppingmart.monitoring.MetricsListener required a bean of type 'io.micrometer.core.instrument.MeterRegistry' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.micrometer.core.instrument.MeterRegistry' in your configuration.
+],traceId= 
+2021-11-17 10:47:47.043, message=[Starting ShoppingApplication using Java 11.0.8 on Joness-MacBook-Air.local with PID 52491 (/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes started by jonesalapat in /Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging)],traceId= 
+2021-11-17 10:47:47.065, message=[No active profile set, falling back to default profiles: default],traceId= 
+2021-11-17 10:47:49.861, message=[Tomcat initialized with port(s): 8080 (http)],traceId= 
+2021-11-17 10:47:49.895, message=[Initializing ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-17 10:47:49.896, message=[Starting service [Tomcat]],traceId= 
+2021-11-17 10:47:49.898, message=[Starting Servlet engine: [Apache Tomcat/9.0.54]],traceId= 
+2021-11-17 10:47:50.036, message=[Initializing Spring embedded WebApplicationContext],traceId= 
+2021-11-17 10:47:50.037, message=[Root WebApplicationContext: initialization completed in 2809 ms],traceId= 
+2021-11-17 10:47:50.212, message=[Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'metricsListerner'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'metricsListener' defined in file [/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes/com/jones/shoppingmart/monitoring/MetricsListener.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.micrometer.core.instrument.MeterRegistry' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}],traceId= 
+2021-11-17 10:47:50.219, message=[Stopping service [Tomcat]],traceId= 
+2021-11-17 10:47:50.246, message=[
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.],traceId= 
+2021-11-17 10:47:50.274, message=[
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.jones.shoppingmart.monitoring.MetricsListener required a bean of type 'io.micrometer.core.instrument.MeterRegistry' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.micrometer.core.instrument.MeterRegistry' in your configuration.
+],traceId= 
+2021-11-17 10:49:45.826, message=[Starting ShoppingApplication using Java 11.0.8 on Joness-MacBook-Air.local with PID 52509 (/Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging/target/classes started by jonesalapat in /Users/jonesalapat/jones/work/personal/jonesjalapatblog/monitoringLogging)],traceId= 
+2021-11-17 10:49:45.842, message=[No active profile set, falling back to default profiles: default],traceId= 
+2021-11-17 10:49:48.366, message=[Tomcat initialized with port(s): 8080 (http)],traceId= 
+2021-11-17 10:49:48.393, message=[Initializing ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-17 10:49:48.396, message=[Starting service [Tomcat]],traceId= 
+2021-11-17 10:49:48.397, message=[Starting Servlet engine: [Apache Tomcat/9.0.54]],traceId= 
+2021-11-17 10:49:48.511, message=[Initializing Spring embedded WebApplicationContext],traceId= 
+2021-11-17 10:49:48.512, message=[Root WebApplicationContext: initialization completed in 2570 ms],traceId= 
+2021-11-17 10:49:50.575, message=[Exposing 2 endpoint(s) beneath base path '/actuator'],traceId= 
+2021-11-17 10:49:50.627, message=[Starting ProtocolHandler ["http-nio-8080"]],traceId= 
+2021-11-17 10:49:50.657, message=[Tomcat started on port(s): 8080 (http) with context path ''],traceId= 
+2021-11-17 10:49:50.682, message=[Started ShoppingApplication in 5.744 seconds (JVM running for 7.758)],traceId= 
