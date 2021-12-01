@@ -13,7 +13,7 @@ public class ProductGenerator {
 	
 
 	private static java.util.List<Product> createProductList() {
-		List<Product> products = new ArrayList();
+		List<Product> products = new ArrayList<Product>();
 		Product product2 = new Product(2, "Second Product", "Description");
 		Product product3 = new Product(3, "Third Product", "Description");
 		Product product1 = new Product(1, "First Product", "Description");

@@ -28,36 +28,16 @@ public class MetricsListener {
 	public void incrementCounter(LoggingEntity loggingEntity) {
 		Counter counter = null;
 		String[] method = loggingEntity.getMethod().split("\\.");
-
-//		StatsdConfig config = new StatsdConfig() {
-//			@Override
-//			public String get(String k) {
-//				return null;
-//			}
-//
-//			@Override
-//			public StatsdFlavor flavor() {
-//				return StatsdFlavor.ETSY;
-//			}
-//		};
-//
-//		MeterRegistry registry = new StatsdMeterRegistry(config, Clock.SYSTEM);
-
-		// Metrics.globalRegistry.add(registry);
 		if (LoggingEntity.Status.SUCCESS.equals(loggingEntity.getStatus())) {
-			counter = Counter.builder("shoppingservice")
-					.tag(method[0], method[1])
-					.tag("status", "success")
+			counter = Counter.builder("shoppingservice").tag(method[0], method[1]).tag("status", "success")
 					.register(meterRegistry);
 		} else if (LoggingEntity.Status.FAILURE.equals(loggingEntity.getStatus())) {
-			counter = Counter.builder("shoppingservice")
-					.tag(method[0], method[1])
-					.tag("status", "failure")
+			counter = Counter.builder("shoppingservice").tag(method[0], method[1]).tag("status", "failure")
 					.register(meterRegistry);
 		} else {
 			return;
 		}
-		counter.increment(1.0);
+		//counter.increment(1.0);
 	}
 
 }
